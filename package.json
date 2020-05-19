@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/Demonico/wrapped-swapi/issues"
   },
-  "homepage": "https://github.com/Demonico/wrapped-swapi#readme"
+  "homepage": "https://github.com/Demonico/wrapped-swapi#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1"
+  }
 }
