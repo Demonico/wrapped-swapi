@@ -1,0 +1,20 @@
+{
+  "name": "wrapped-swapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Demonico/wrapped-swapi.git"
+  },
+  "keywords": [],
+  "author": "Jarrod Van Doren",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Demonico/wrapped-swapi/issues"
+  },
+  "homepage": "https://github.com/Demonico/wrapped-swapi#readme"
+}
