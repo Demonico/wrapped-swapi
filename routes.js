@@ -20,6 +20,12 @@ router.get('/people', async (req, res) => {
     case 'name':
       res.send(helpers.sortByName(swapiResponse))
       break
+    case 'mass':
+      res.send(helpers.sortByNumber(swapiResponse, 'mass'))
+      break
+    case 'height':
+      res.send(helpers.sortByNumber(swapiResponse, 'height'))
+      break
     default:
       res.send(swapiResponse)
       break
