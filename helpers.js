@@ -31,14 +31,6 @@ function sortByNumber(arr = [], sortType) {
   })
 }
 
-// function sortByHeight(arr = []) {
-//   return arr.sort((a,b) => {
-//     if (a.mass === 'unknown' && b.mass === 'unknown') return 0
-//     if (a.mass === 'unknown') return 1
-//     if (b.mass === 'unknown') return -1
-//   })
-// }
-
 module.exports = {
   sortByNumber,
   sortByName,
