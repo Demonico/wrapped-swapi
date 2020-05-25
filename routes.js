@@ -24,4 +24,20 @@ router.get('/people', async (req, res) => {
   }
 })
 
+router.get('/planets', async (req, res) => {
+  const allPeople = await swapi.people()
+  const allPlanets = await swapi.planets()
+
+  const namedPeople = allPlanets.reduce((acc, cur) => {
+    const { residents } = cur
+    const newResidents = residents.map(
+      (res) => allPeople.find((person) => person.url === res).name
+    )
+
+    return [...acc, { ...cur, residents: newResidents }]
+  }, [])
+
+  res.send(namedPeople)
+})
+
 module.exports = router
