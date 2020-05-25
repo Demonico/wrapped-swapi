@@ -4,12 +4,6 @@ const getPeople = async (url) => {
   return await axios.get(url)
 }
 
-const parseNumber = (str) => {
-  // check for 'unknown'
-  // check for ','
-  // return number
-}
-
 module.exports = {
   people: async function () {
     let results = []
@@ -25,9 +19,4 @@ module.exports = {
 
     return results
   },
-  sortByName: function () {
-    //
-  },
-  sortByheight: function () {},
-  sortByMass: function () {},
 }
