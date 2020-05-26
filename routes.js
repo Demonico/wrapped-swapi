@@ -1,5 +1,5 @@
 const express = require('express')
-const swapi = require('./swapiController')
+const swapi = require('./swapiService')
 const helpers = require('./helpers')
 
 const router = express.Router()
@@ -13,10 +13,8 @@ router.get('/people', async (req, res) => {
       res.send(helpers.sortByName(swapiResponse))
       break
     case 'mass':
-      res.send(helpers.sortByNumber(swapiResponse, 'mass'))
-      break
     case 'height':
-      res.send(helpers.sortByNumber(swapiResponse, 'height'))
+      res.send(helpers.sortByNumber(swapiResponse, sortBy))
       break
     default:
       res.send(swapiResponse)
